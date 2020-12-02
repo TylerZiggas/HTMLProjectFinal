@@ -130,12 +130,12 @@
             </div>
             <div id="zipDiv">
                 <label for="zip" class="identify-text">Zip Code:  *</label><br/>
-                <input id="zip" type="text" name="zip" class="form-text" placeholder="73110" value="<?php echo $zip;?>"/><br/>
+                <input id="zip" type="text" name="zip" class="form-text" placeholder="73110" onblur="formatZip(this);" value="<?php echo $zip;?>"/><br/>
                 <span id="zipErr" class="error"><?php echo $zipErr;?></span>
             </div>
             <div id="phoneDiv">
                 <label for="phone" class="identify-text">Phone Number:  *</label><br/>
-                <input id="phone" type="text" name="phone" class="form-text" placeholder="314-955-3233" value="<?php echo $phone;?>"/><br/>
+                <input id="phone" type="text" name="phone" class="form-text" placeholder="314-955-3233" onblur="formatPhone(this);" value="<?php echo $phone;?>"/><br/>
                 <span id="phoneErr" class="error" ><?php echo $phoneErr;?></span>
             </div>
             <div id="emailDiv">
@@ -163,8 +163,9 @@
                 <input id="birthday" type="date" name="birthday"  value="<?php echo $birthday;?>"/><br/>
                 <span id="birthdayErr" class="error"><?php echo $birthdayErr;?></span><br/><br/>
             </div>
-            <input type="submit" name="submit" value="Submit">
-            <input type="reset" name="reset" value="Reset" />
+            <button type="submit" name="submit" value="Submit" >Register</button>
+            <button type="reset" name="reset" value="Reset" >Reset</button>
+            <span id="submitErr" class="help-block hide">Please fill out the * Required Fields</span>
         </div>
     </div>
     </form>

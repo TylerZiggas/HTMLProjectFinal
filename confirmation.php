@@ -149,7 +149,7 @@
                 <div id="birthDiv">
                     <label for="birthday">Date of Birth:  *</label><br/>
                     <input disabled id="birthday" type="date" name="birthday"  value="<?php echo $birthday;?>"/><br/>
-                </div>
+                </div><br/><br/>
                 <input disabled type="submit" name="submit" value="Submit">
                 <input disabled type="reset" name="reset" value="Reset" />
             </div>

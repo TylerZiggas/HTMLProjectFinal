@@ -16,8 +16,8 @@ function registerHandlers() {
     document.getElementById("divorced").onclick = fixButton;
     document.getElementById("widowed").onclick = fixButton;
     document.getElementById("birthday").onclick = fixButton;
-    document.getElementById("register").onsubmit = chkSubmit;
-    document.getElementById("register").onreset = resetFields;
+    document.getElementById("form").onsubmit = chkSubmit;
+    document.getElementById("form").onreset = resetFields;
 }
 
 function chkUsername() { //USERNAME
