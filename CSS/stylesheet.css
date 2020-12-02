@@ -1,0 +1,169 @@
+body {
+    font-size: 100%;
+    font-family:"Lucida Console", Monaco, monospace;
+    margin: 20px;
+    line-height: 26px;
+}
+
+.entry-content {
+    margin: 0;
+}
+
+.navbar {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    overflow: hidden;
+    position: fixed;
+    background-color: black;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: cornsilk;
+    text-align: left;
+    padding: 14px 20px;
+}
+
+.navbar .current {
+    color: crimson !important;
+}
+
+#top, #main, #maintext, #registration, #confirmation, #bottom{
+    display: inline-block;
+    opacity: 90%;
+    border-radius: 4px;
+    margin: 4px;
+}
+
+#top {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    background-color: black;
+    color: cornsilk;
+    padding: 30px;
+    width: 100%;
+}
+
+#main {
+    padding: 10px;
+    margin: 0 210px;
+}
+
+#maintext {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    line-height: 40px;
+    margin: auto;
+    font-size: 14px;
+    columns: 3 250px;
+    background-color: crimson;
+    color: cornsilk;
+    padding: 15px;
+}
+
+#bottom {
+    z-index: 1;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: auto;
+    columns: 3 250px;
+    background-color: black;
+    color: cornsilk;
+    padding: 20px;
+    width: 100%;
+}
+
+#registration {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    line-height: 40px;
+    margin: auto;
+    font-size: 20px;
+    columns: 3 250px;
+    background-color: white;
+    color: black;
+    padding: 50px;
+    width: 100%;
+}
+
+#confirmation {
+    word-break: break-all;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    line-height: 40px;
+    margin: auto;
+    font-size: 20px;
+    columns: 1 250px;
+    background-color: white;
+    color: black;
+    padding: 50px;
+    width: 100%;
+}
+
+.identify-text {
+    color: black;
+}
+
+.form-text {
+    color: black !important;
+}
+
+#userDiv, #passDiv, #verPassDiv, #firstDiv, #lastDiv, #add1Div, #add2Div, #cityDiv, #zipDiv, #phoneDiv, #emailDiv, #genderDiv, #maritalDiv, #birthdayDiv, #submitDiv{
+    min-width: 350px;
+    overflow: hidden;
+    display: inline-block;
+    column-fill: balance;
+
+}
+
+#userErr, #passErr, #verPassErr, #firstErr, #lastErr, #add1Err, #add2Err, #cityErr, #zipErr, #phoneErr, #emailErr, #genderErr, #maritalErr, #birthdayErr, #submitErr{
+    color: red;
+}
+
+.has-error {
+    color: red;
+}
+
+.has-success {
+    color: green;
+}
+
+.box-error {
+    border-style: solid;
+    border-color: red;
+    background-color: #FFCCCB;
+}
+
+.box-success {
+    border-style: solid;
+    border-color: green;
+    background-color: lightgreen;
+}
+
+section {
+    top: 0;
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url("../IMG/animationbackground.jpg");
+    background-size: cover;
+}
+
+section:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../IMG/rain.png);
+    animation: rain 0.2s linear infinite;
+}
+
+@keyframes rain {
+    0% {background-position: 0 0;}
+    50% {background-position: 10% 50%;}
+    100% {background-position: 20% 100%;}
+}

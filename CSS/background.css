@@ -1,0 +1,9 @@
+body {
+    width: 100%;
+    background-image: url("../IMG/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    top: 0;
+    display: block;
+}
