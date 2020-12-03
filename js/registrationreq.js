@@ -703,10 +703,10 @@ function chkSubmit() {
 function resetFields () {
     let userDiv = document.getElementById("userDiv");
     let userErr = document.getElementById("userErr");
-    let userBox = document.getElementById("username");
+    let userBox = document.getElementById("userName");
     let passDiv = document.getElementById("passDiv");
     let passErr = document.getElementById("passErr");
-    let passBox = document.getElementById("password");
+    let passBox = document.getElementById("PASSWORD");
     let verPassDiv = document.getElementById("verPassDiv");
     let verPassErr = document.getElementById("verPassErr");
     let verPassBox = document.getElementById("repeatPassword");
