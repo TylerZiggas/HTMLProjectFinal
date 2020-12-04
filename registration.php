@@ -36,42 +36,43 @@
             <div id="userDiv">
                 <label for="userName" class="identify-text">Username: *</label><br/>
                 <input id="userName" type="text" name="userName" class="form-text" placeholder="WeLoveRaccoonCity" value="<?php echo $userName;?>"/><br/>
-                <span id="userErr" class="error"><?php echo $userErr;?></span>
+                <span id="userErr" class="help-block hide">Username must be between 6 and 50 characters.</span>
             </div>
             <div id="passDiv">
                 <label for="PASSWORD" class="identify-text">Password: *</label><br/>
                 <input id="PASSWORD" type="PASSWORD" name="PASSWORD" class="form-text" placeholder="ABC123$d" value="<?php echo $PASSWORD;?>"/><br/>
-                <span id="passErr" class="error"><?php echo $passErr;?></span>
+                 <span id="passErr" class="help-block hide">Passwords must be between 8-50 characters and require
+                                    a capital letter, a lowercase letter, a digit, and a special character.</span>
             </div>
             <div id="verPassDiv">
                 <label for="repeatPassword" class="identify-text">Repeat Password:  *</label><br/>
                 <input id="repeatPassword" type="password" name="repeatPassword" class="form-text" placeholder="ABC123$d" value="<?php echo $repeatPassword;?>"/><br/>
-                <span id="verPassErr" class="error"><?php echo $verPassErr;?></span>
+                 <span id="verPassErr" class="help-block hide">The two passwords do not match, please re-enter both.</span>
             </div>
             <div id ="firstDiv">
                 <label for="firstName" class="identify-text">First Name:  *</label><br/>
                 <input id="firstName" type="text" name="firstName" class="form-text" placeholder="Leon" value="<?php echo $firstName;?>"/><br/>
-                <span id="firstErr" class="error"><?php echo $firstErr;?></span>
+                <span id="firstErr" class="help-block hide">First name must be less than 51 characters.</span>
             </div>
             <div id="lastDiv">
                 <label for="lastName" class="identify-text">Last Name:  *</label><br/>
                 <input id="lastName" type="text" name="lastName" class="form-text" placeholder="Kennedy" value="<?php echo $lastName;?>"/><br/>
-                <span id="lastErr" class="error"><?php echo $lastErr;?></span>
+                <span id="lastErr" class="help-block hide">Last name must be less than 51 characters.</span>
             </div>
             <div id="add1Div">
                 <label for="address1" class="identify-text">Address Line 1:  *</label><br/>
                 <input id="address1" type="text" name="address1" class="form-text" placeholder="123 Arklay Drive" value="<?php echo $address1;?>"/><br/>
-                <span id="add1Err" class="error"><?php echo $add1Err;?></span>
+                <span id="add1Err" class="help-block hide">Addresses must be less than 101 characters.</span>
             </div>
             <div id="add2Div">
                 <label for="address2" class="identify-text">Address Line 2:</label><br/>
                 <input id="address2" type="text" name="address2" class="form-text" placeholder="(Optional)" value="<?php echo $address2;?>"/><br/>
-                <span id="add2Err" class="error"><?php echo $add2Err;?></span>
+                <span id="add2Err" class="help-block hide">OPTIONAL: Addresses must be less than 101 characters.</span>
             </div>
             <div id="cityDiv">
                 <label for="city" class="identify-text">City:  *</label><br/>
                 <input id="city" type="text" name="city" class="form-text" placeholder="Raccoon City" value="<?php echo $city;?>"/><br/>
-                <span id="cityErr" class="error"><?php echo $cityErr;?></span>
+                <span id="cityErr" class="help-block hide">City must be less than 51 characters.</span>
             </div>
             <div id="stateDiv">
                 <label for="state">State:  *</label><br/>
@@ -131,24 +132,24 @@
             <div id="zipDiv">
                 <label for="zip" class="identify-text">Zip Code:  *</label><br/>
                 <input id="zip" type="text" name="zip" class="form-text" placeholder="73110" onblur="formatZip(this);" value="<?php echo $zip;?>"/><br/>
-                <span id="zipErr" class="error"><?php echo $zipErr;?></span>
+                <span id="zipErr" class="help-block hide">Zip Code must be either 5 or 9 digits.</span>
             </div>
             <div id="phoneDiv">
                 <label for="phone" class="identify-text">Phone Number:  *</label><br/>
                 <input id="phone" type="text" name="phone" class="form-text" placeholder="314-955-3233" onblur="formatPhone(this);" value="<?php echo $phone;?>"/><br/>
-                <span id="phoneErr" class="error" ><?php echo $phoneErr;?></span>
+                <span id="phoneErr" class="help-block hide" >Phone number must be either 7 or 10 digits.</span>
             </div>
             <div id="emailDiv">
                 <label for="email" class="identify-text">Email:  *</label><br/>
                 <input id="email" type="text" name="email" class="form-text" placeholder="KennedyLeon@gmail.com" value="<?php echo $email;?>"/><br/>
-                <span id="emailErr" class="error"><?php echo $emailErr;?></span>
+                <span id="emailErr" class="help-block hide">Emails must following the format user@host.com</span>
             </div>
             <div id="genderDiv">
                 <label for="male" id="gender">Gender:  *</label><br/>
                 <input type="radio" name="gender" id="male" value="male" <?php if ($gender=="male") {echo "checked";}?>/><label for="male">Male</label>
                 <input type="radio" name="gender" id="female" value="female" <?php if ($gender=="female") {echo "checked";}?>/><label for="female">Female</label><br/>
                 <input type="radio" name="gender" id="other" value="other" <?php if ($gender=="other") {echo "checked";}?>/><label for="other">Other</label><br/>
-                <span id="genderErr" class="error"><?php echo $genderErr;?></span>
+                <span id="genderErr" class="help-block hide">Please select a gender.</span>
             </div>
             <div id="maritalDiv">
                 <label for="single" id="marital">Martial Status:  *</label><br/>
@@ -156,12 +157,12 @@
                 <input type="radio" name="marital" id="married" value="married" <?php if ($marital=="married") {echo "checked";}?>/><label for="married">Married</label><br/>
                 <input type="radio" name="marital" id="widowed" value="widowed" <?php if ($marital=="widowed") {echo "checked";}?>/><label for="widowed">Widowed</label>
                 <input type="radio" name="marital" id="divorced" value="divorced" <?php if ($marital=="divorced") {echo "checked";}?>/><label for="divorced">Divorced</label><br/>
-                <span id="maritalErr" class="error"><?php echo $maritalErr;?></span>
+                <span id="maritalErr" class="help-block hide">Please select a martial status.</span>
             </div>
             <div id="birthDiv">
                 <label for="birthday">Date of Birth:  *</label><br/>
                 <input id="birthday" type="date" name="birthday"  value="<?php echo $birthday;?>"/><br/>
-                <span id="birthdayErr" class="error"><?php echo $birthdayErr;?></span><br/><br/>
+                <span id="birthdayErr" class="help-block hide">Please select your date of birth.</span><br/><br/>
             </div>
             <button type="submit" name="submit" value="Submit" >Register</button>
             <button type="reset" name="reset" value="Reset" >Reset</button>
